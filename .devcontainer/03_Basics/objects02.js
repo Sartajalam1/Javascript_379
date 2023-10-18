@@ -17,7 +17,7 @@ const regularUser = {
     }
 }
  
-// object ke andar objects access kar sakte hai Dot(.) ka use karke, Dot lagte jao aur objects kender ka object acsses katre jao
+// object ke andar objects access kar sakte hai Dot(.) ka use karke, Dot lagte jao aur objects ke under ka object acsses katre jao
 // console.log(regularUser.fullname.userFullName)
 
 // Two onjects ko kaise Add kar sakte hai syntax 
@@ -30,3 +30,21 @@ const obj2 = {3: "a",4: "b"}
 //Spread Method 
 const obj3 = {...obj1, ...obj2}
 console.log(obj3);
+
+// Object De-structure Method
+
+const course = {
+    Coursename:"js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+course.courseInstructor
+
+
+const{courseInstructor} = course
+console.log(courseInstructor);
+
+// Object destructure yese kiya jata hai
+const {courseInstructor: instructor} = course; 
+console.log(instructor)
